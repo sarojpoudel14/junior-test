@@ -1,37 +1,28 @@
 # junior-test
 
-Task: Build a Bookmark Management App using store management
+Task: Mini E-Commerce App Development - Skill Test
 
-Pages Required:
-1. Home Page - Display welcome message and a summary of bookmarks i.e. total bookmarks, total liked bookmarks, total categories.
-2. Bookmarks Page - Display a list of bookmarks. Also allow user to add, edit, complete and delete bookmark.
-3. Category Page - Display a list of categories.
-4. Settings Page - Let user toggle a dark mode theme.
+Overview:
+The goal of this project is to build a mini e-commerce app using Vue.js 3 and the FakeStore API. The app should include product listing, a product details page, and a shopping cart feature.
 
-Bookmark Data Pattern:
-[{ id: '1', title: 'VueJs Basics', desciption: 'This is description', url: 'https://vuejs.org/guide/introduction.html', category: "[INSERT CATEGORY ID]", liked: true, created_at: "", updated_at: "" }]
+- Create a Home page that fetches and displays products from the FakeStore API in a grid layout.
+- Build a reusable `ProductCard` component to show product details like image, title, price, and a "View Details" button.
+- Create a dynamic Product Details page using Vue Router (`/product/:id`) that fetches product-specific details from the FakeStore API.
+- Add a search bar on the Home page to filter products by name or category dynamically.
+- Implement error handling for API failures or no search results.
+- Implement a shopping cart to add/remove products, using Pinia or a custom store for state management.
+- Create a `/cart` route to display selected items and total price.
+- Finalize the UI with navigation, responsive design, and user-friendly layout.
+- Test and optimize the app for smooth functionality.
 
-Requirements:
-- State Management(Pinia):
-  Create stores for bookmarks and settings to store it locally in store.
-  Bookmarks should be stored in a Pinia store with persistent state (via localStorage) to retain bookmarks between page reloads.
-- VueJs's Lifecycle and Events:
-  Use computed to display derived data i.e. total bookmarks, total completed bookmarks. etc.
-  Use other events and lifecycle according to your needs.
-- Bookmark Management:
-  Bookmark must have relation with categoru.
-  Allow users to create bookmarks with title, url, description, category and liked status.
-  created_at and updated_at must be change based on create or edit function.
-  Paginate data with dropdown to select items to show per page.
-  Users can mark a task "completed" using a checkbox.
-  Search bookmark by title.
-  Filter by liked status.
-  Inputs must have validation logic based in the item before submitting.
+Evaluation Criteria:
+- Code Quality: Component structure, modularity, and reusability.
+- Functionality: Meets requirements and handles errors gracefully.
+- State Management: Effective cart functionality and state handling.
+- UI/UX: Visually appealing and responsive design.
+- Time Management: Timely completion of tasks.
 
-Evaluation Criteria
-- Code Quality
-- Proper usage of Pinia
-- Both Options API and Composition API are valid
+Good luck!
 
 Plus points
 - Proper documentation
